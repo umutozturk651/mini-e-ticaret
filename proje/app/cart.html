@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet - Mini Mağaza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">← Geri</a>
+        <h1>Sepetim</h1>
+        <div class="cart-btn" id="cart-total-header">₺0.00</div>
+    </header>
+
+    <div class="cart-items" id="cart-items">
+        <!-- JS ile doldurulacak -->
+    </div>
+
+    <div class="cart-summary">
+        <div class="summary-row">
+            <span>Ara Toplam:</span>
+            <span id="subtotal">₺0.00</span>
+        </div>
+        <div class="summary-row">
+            <span>Kargo:</span>
+            <span>₺9.90</span>
+        </div>
+        <div class="summary-row total">
+            <span>Toplam:</span>
+            <span id="total">₺9.90</span>
+        </div>
+        <button class="checkout-btn" id="checkout-btn" disabled>ÖDEME YAP</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

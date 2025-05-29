@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Mağaza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini Mağaza</h1>
+        <a href="cart.html" class="cart-btn">Sepet (<span id="cart-count">0</span>)</a>
+    </header>
+
+    <div class="categories">
+        <button class="category active" data-category="all">Tüm Ürünler</button>
+        <button class="category" data-category="electronics">Elektronik</button>
+        <button class="category" data-category="clothing">Giyim</button>
+    </div>
+
+    <div class="products" id="products-container">
+        <!-- Ürün 1 -->
+        <div class="product" data-id="1" data-category="electronics">
+            <img src="https://m.media-amazon.com/images/I/61L1ItFgFHL._AC_UF1000,1000_QL80_.jpg" alt="akıllı telefon" class="product-img">
+            <h3 class="product-title">akıllı telefon</h3>
+            <div class="product-price">₺9999.99</div>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+
+        <!-- Ürün 2 -->
+        <div class="product" data-id="2" data-category="electronics">
+            <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._AC_UF1000,1000_QL80_.jpg" alt="laptop" class="product-img">
+            <h3 class="product-title">laptop</h3>
+            <div class="product-price">₺19999.99</div>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+      
+
+        <!-- Ürün 3 -->
+        <div class="product" data-id="3" data-category="clothing">
+            <img src="https://cdn.myikas.com/images/bfb20c5c-1f47-491b-83e7-59a8f921f621/e63b1527-4dab-4420-b882-bc33f95dfdd4/3840/beyaz-on.webp" alt="Beyaz Tişört" class="product-img">
+            <h3 class="product-title">Beyaz Tişört</h3>
+            <div class="product-price">₺289.99</div>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+
+        <!-- Ürün 4 -->
+        <div class="product" data-id="4" data-category="clothing">
+            <img src="https://static.ticimax.cloud/37512/uploads/urunresimleri/buyuk/trendiz-erkek-antrasit-basic-sweatshir-4d90-a.jpg" alt="Sweatshirt" class="product-img">
+            <h3 class="product-title">Sweatshirt</h3>
+            <div class="product-price">₺629.99</div>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+      <!-- Ürün 5 -->
+        <div class="product" data-id="5" data-category="clothing">
+            <img src="https://productimages.hepsiburada.net/s/777/375-375/110000740098602.jpg" alt="pantalon" class="product-img">
+            <h3 class="product-title">pantalon</h3>
+            <div class="product-price">₺859.99</div>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+      <!-- Ürün 6 -->
+        <div class="product" data-id="6" data-category="clothing">
+            <img src="https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/5334/uploads/urunresimleri/buyuk/gri-basic-lastikli-esofman-alti-6524-26b60b.jpg" alt="eşortman altı" class="product-img">
+            <h3 class="product-title">eşortman altı</h3>
+            <div class="product-price">₺459.99</div>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+      <!-- Ürün 7 -->
+        <div class="product" data-id="7" data-category="electronics">
+            <img src="https://carmenta.com.tr/wp-content/uploads/2024/08/carmenta-hera-askeri-dayanikli-akilli-saat-yesil.png" alt="akıllı saat" class="product-img">
+            <h3 class="product-title">akıllı saat</h3>
+            <div class="product-price">₺3999.99</div>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+       <!-- Ürün 8 -->
+        <div class="product" data-id="8" data-category="electronics">
+            <img src="https://reimg-teknosa-cloud-prod.mncdn.com/mnresize/600/600/productimage/125047873/125047873_0_MC/c15dc195.jpg" alt="tablet" class="product-img">
+            <h3 class="product-title">tablet</h3>
+            <div class="product-price">₺6999.99</div>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+       <!-- Ürün 9 -->
+        <div class="product" data-id="9" data-category="electronics">
+            <img src="https://cdn.dsmcdn.com/ty1495/product/media/images/prod/QC/20240821/09/367f9d09-293f-38b9-8b91-28219cb45236/1_org_zoom.jpg" alt="televizyon" class="product-img">
+            <h3 class="product-title">televizyon</h3>
+            <div class="product-price">₺16999.99</div>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+      <!-- Ürün 10 -->
+        <div class="product" data-id="10" data-category="clothing">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0BORnS0rtQhHEEnRcRxn5cNIa8bF95Vxow&s" alt="mont" class="product-img">
+            <h3 class="product-title">mont</h3>
+            <div class="product-price">₺6459.99</div>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+       <!-- Ürün 11 -->
+        <div class="product" data-id="11" data-category="electronics">
+            <img src="https://st-troy.mncdn.com/mnresize/775/775/Content/media/ProductImg/original/6925281964749-jbl-tune-520bt-multi-connect-wi-fi-kulaklik-mavi-638199602434115587.jpeg" alt="kulaklık" class="product-img">
+            <h3 class="product-title">kulaklık</h3>
+            <div class="product-price">₺1699.99</div>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<body>
+    <!-- Diğer sayfa içeriği burada olacak -->
+    
+    <!-- Footer Başlangıç -->
+    <footer>
+        <div class="footer-container">
+            <!-- Hakkımızda Bölümü -->
+            <div class="footer-section">
+                <h3>Hakkımızda</h3>
+                <p>Şirketimiz 2012 yılından beri müşterilerine kaliteli ürünler sunmaktadır. Güvenilir alışverişin adresi. (detaylı bilgi icin hızlı linkler kısmındaki hakkımızda linkine tıklayınız)💙</p>
+            </div>
+            
+            <!-- Hızlı Linkler -->
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <ul>
+                    <li><a href="https://mini-e-ticaret.glitch.me/cart.html">sepet</a></li>
+                    <li><a href="https://mini-e-ticaret.glitch.me/hakkımızda.html">Hakkımızda</a></li>
+                    <li><a href="https://mini-e-ticaret.glitch.me/iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+            
+            <!-- İletişim Bilgileri -->
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 1234 Sokak, İstanbul, Türkiye</li>
+                    <li><i class="fas fa-phone"></i> +90 551 641 62 90</li>
+                    <li><i class="fas fa-envelope"></i> mini_e-ticaretsitem@gmail.com</li>
+                </ul>
+            </div>
+            
+            <!-- Sosyal Medya ve Canlı Destek -->
+            <div class="footer-section">
+                <h3>Sosyal Medya</h3>
+                <div class="social-icons">
+                    <a href="https://x.com/?lang=tr"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/?locale=tr_TR"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/?app=desktop&hl=tr"><i class="fab fa-youtube"></i></a>
+                </div>
+                
+                <h3 style="margin-top: 20px;">Canlı Destek</h3>
+                <a href="https://mini-e-ticaret.glitch.me/iletisim.html" class="live-support">
+                    <i class="fas fa-headset"></i> Canlı Destek Hattı
+                </a>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2025 E-Ticaret Sitem. Tüm hakları saklıdır.
+        </div>
+    </footer>
+    <!-- Footer Bitiş -->
+</body>
+</html>
